@@ -1,2 +1,0 @@
-# Elk-Project
-School project
