@@ -1,0 +1,11 @@
+---
+  
+- name: My first Playbook
+  hosts: webservers
+  become: true
+  tasks: 
+ 
+  - name: Install my favourite web servers - Apache
+    apt: 
+      name: apache2 
+      state: present
