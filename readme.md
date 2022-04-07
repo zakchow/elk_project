@@ -24,17 +24,21 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 
 > What aspect of security do load balancers protect?
+
 Load balancers protect Azure resources within virtual networks and mmonitor and log any conifguration and traffic of virtual networks.
 
 > What is the advantage of a jump box?
+
 An advantage of the JumpBox is that it reduces the size of any potential attack surface. The jumpbox is used to improve security by first allowing admins to connect to it before launching any administrative task.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
 
 > What does Filebeat watch for?
+
 Filebeat watches for log files or locations that are specified and log files.
 
 > What does Metricbeat record?
+
 Metricbeat records metricbeat records metrics and statistics and helps to monitor servers by collecting those metrics from the system and services running on that server
 
 The configuration details of each machine may be found below.
