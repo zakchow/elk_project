@@ -116,12 +116,12 @@ In order to check that the ELK server is running:
 [Elk Server](http://20.210.237.107:5601/app/kibana#/home)
 
 Commands the user will need to run to download the playbook, update the files:
-ssh user@JumpBox(PrivateIP)
-sudo docker container list -a - Locate the ansible container
-sudo docker start (Container_Name)
-sudo docker attach (Container_Name)
-cd /etc/ansible
-ansible-playbook elk-playbook.yml (Installs and Configures ELK-Server)
-cd /etc/ansible/
-ansible-playbook beats-playbook.yml (Installs and Configures Beats)
-Open a new browser on device, navigate to (ELK-Server-PublicIP:5601/app/kibana) - This will bring up Kibana Web Portal.
+- ssh user@JumpBox(PrivateIP)
+- sudo docker container list -a - Locate the ansible container
+- sudo docker start (Container_Name)
+- sudo docker attach (Container_Name)
+- cd /etc/ansible
+- ansible-playbook elk-playbook.yml (Installs and Configures ELK-Server)
+- cd /etc/ansible/
+- ansible-playbook beats-playbook.yml (Installs and Configures Beats)
+- open a new browser on device, navigate to (ELK-Server-PublicIP:5601/app/kibana) - This will bring up Kibana Web Portal.
