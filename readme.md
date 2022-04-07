@@ -23,29 +23,29 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 
-*What aspect of security do load balancers protect?*
+> What aspect of security do load balancers protect?
 Load balancers protect Azure resources within virtual networks and mmonitor and log any conifguration and traffic of virtual networks.
 
-*What is the advantage of a jump box?*
+> What is the advantage of a jump box?
 An advantage of the JumpBox is that it reduces the size of any potential attack surface. The jumpbox is used to improve security by first allowing admins to connect to it before launching any administrative task.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
 
-*What does Filebeat watch for?*
+> What does Filebeat watch for?
 Filebeat watches for log files or locations that are specified and log files.
 
-*What does Metricbeat record?*
+> What does Metricbeat record?
 Metricbeat records metricbeat records metrics and statistics and helps to monitor servers by collecting those metrics from the system and services running on that server
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.4   | Linux            |
-| Web-1    |          | 10.0.0.5   |                  |
-| Web-2    |          | 10.0.0.6   |                  |
-| Elk      |          | 10.1.0.4   |                  |
+| Web-1    | Server   | 10.0.0.5   | Linux            |
+| Web-2    | Server   | 10.0.0.6   | Linux            |
+| Elk      | Server   | 10.1.0.4   | Linux            |
 
 ### Access Policies
 
