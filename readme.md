@@ -42,7 +42,7 @@ Filebeat watches for log files or locations that are specified and log files.
 Metricbeat records metricbeat records metrics and statistics and helps to monitor servers by collecting those metrics from the system and services running on that server
 
 The configuration details of each machine may be found below.
-Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -55,19 +55,23 @@ Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_table
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the jumbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+⋅⋅* Private IP
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by SSH.
+
+> Which machine did you allow to access your ELK VM? What was its IP address?
+
+The Jumpbox was allowed to access the Elk VM via Public IP address.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Name     | Publicly Accessible | 
+|----------|---------------------|
+| Jump Box | Yes                 |              
+| Web-1    | No                  |                      
+| Web-2    | No                  |                      
+| Elk      | Yes                 |                     
 
 ### Elk Configuration
 
